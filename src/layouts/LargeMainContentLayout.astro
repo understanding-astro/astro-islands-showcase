@@ -1,0 +1,39 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Item from "../components/Item.astro";
+import Nav from "../components/Nav.astro";
+
+const itemList = new Array(20).fill(undefined);
+---
+
+<html lang="en">
+  <Head subtitle="default" />
+  <body>
+    <Nav />
+
+    <div class="relative flex items-center justify-center bg-slate-900 p-12">
+      <p class="absolute p-2 text-5xl text-white/10">Main content</p>
+      <div
+        role="status"
+        class="w-full space-y-4 divide-y divide-gray-700 rounded border border-gray-700 p-4 shadow md:p-6"
+      >
+        {itemList.map(() => <Item />)}
+      </div>
+    </div>
+    <div class="relative min-h-[80vh] shrink-0 grow basis-10 bg-slate-700 p-12">
+      <div class="md:h-[55vh]"></div>
+
+      <aside class="rounded-md border border-slate-500 p-4">
+        <slot>
+          <h1 class="text-white/20">
+            <b>Slot: {" "}</b>your island goes here
+          </h1>
+        </slot>
+      </aside>
+      <p class="absolute p-2 text-xl text-white/30">Interactive content</p>
+    </div>
+
+    <Footer />
+  </body>
+</html>
