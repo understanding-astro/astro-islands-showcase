@@ -34,8 +34,8 @@ export const UpvoteContent = () => {
       </button>
 
       <div className="ml-3">
-        <div className="-300 mt-2 w-14 rounded-md bg-blue-500 px-2 text-sm text-white">
-          React
+        <div className="-300 mt-2 rounded-md bg-blue-500 px-2 text-sm text-white">
+          Built with React
         </div>
 
         <div className="pt-2 text-slate-400">{`${upvoteCount} upvotes`}</div>

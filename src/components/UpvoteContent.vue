@@ -41,10 +41,8 @@ export default {
     </button>
 
     <div class="ml-3">
-      <div
-        class="-300 mt-2 w-10 rounded-md bg-green-500 px-2 text-sm text-white"
-      >
-        Vue
+      <div class="-300 mt-2 rounded-md bg-green-600 px-2 text-sm text-white">
+        Built with Vue
       </div>
       <div class="pt-2 text-slate-400">{{ `${upvoteCount} upvotes` }}</div>
 
