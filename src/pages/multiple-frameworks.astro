@@ -1,0 +1,10 @@
+---
+import { UpvoteContent } from "../components/UpvoteContent.jsx";
+import UpvoteContentVue from "../components/UpvoteContent.vue";
+import DefaultIslandLayout from "../layouts/DefaultIslandLayout.astro";
+---
+
+<DefaultIslandLayout>
+  <UpvoteContent client:load />
+  <UpvoteContentVue client:load />
+</DefaultIslandLayout>

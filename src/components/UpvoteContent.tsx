@@ -6,7 +6,7 @@ export const UpvoteContent = () => {
   const [upvoteCount, setUpvoteCount] = useState(0);
 
   return (
-    <div className="flex items-center">
+    <div className="m-2 flex items-center rounded-md border border-slate-600 p-2">
       <button
         onClick={() => {
           setUpvoteCount((prevCount) =>
@@ -34,6 +34,10 @@ export const UpvoteContent = () => {
       </button>
 
       <div className="ml-3">
+        <div className="-300 mt-2 w-14 rounded-md bg-blue-500 px-2 text-sm text-white">
+          React
+        </div>
+
         <div className="pt-2 text-slate-400">{`${upvoteCount} upvotes`}</div>
 
         <div
