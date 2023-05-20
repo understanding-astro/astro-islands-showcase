@@ -6,7 +6,7 @@
 
 <h1 align="center">
   <a href="https://github.com/understanding-astro/understanding-astro-book/tree/master" target="_blank">
-     Read the book
+     ✨ Read the book ✨
   </a> 
 </h1>
 
