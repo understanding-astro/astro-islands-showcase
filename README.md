@@ -10,7 +10,17 @@
   </a> 
 </h1>
 
-## 🧞 Commands
+## Running the app locally
+
+- Coding along? Stay on the `clean-slate` branch.
+- To view the completed state(s) of the app, checkout to branch `main`
+
+```bash
+  git checkout main # checkout
+  npm run start  # run the app
+```
+
+## 🧞 All Commands
 
 All commands are run from the root of the project, from a terminal:
 
